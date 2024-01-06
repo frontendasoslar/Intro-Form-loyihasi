@@ -23,32 +23,17 @@
    </div>
 
   <!-- SIGN -->
-  <div class="sign">
-    <div class="sign-title">Sign up for the course and get free 7 days</div>
-
-    <form action="https://echo.htmlacademy.ru" class="sign-name">
-      <label for="name"></label>
-      <input class="sign-name-text" type="text" id="name" placeholder="Name" required>
-    </form>
-
-    <form action="https://echo.htmlacademy.ru" class="sign-name">
-      <label for="Last Name"></label>
-      <input class="sign-name-text" type="text" id="Last Name" placeholder="Last Name" required>
-    </form>
-
-    <form action="https://echo.htmlacademy.ru" class="sign-name">
-      <label for="Email Address"></label>
-      <input class="sign-name-text" type="email" id="Email Address" placeholder="Email Address" required>
-    </form>
-
-    <form action="https://echo.htmlacademy.ru" class="sign-name">
-      <label for="Password"></label>
-      <input class="sign-name-text" type="password" id="Password" placeholder="Password" required>
-    </form>
-
-    <div><button class="sign-button" type="submit">Claim your free trial</button></div>
-    <p class="sign-note">By clicking the button, you are agreeing to <a class="sign-note-link" href="#">our Terms and Services</a></p>
-  </div>
+  <form class="signup" action="https://echo.htmlacademy.ru" method="post">
+    <h2 class="signup-heading">Sign up for the course and get free 7 days</h2>
+    <div class="signup-form-fields">
+     <input class="signup-form-field" type="text" name="Name" placeholder="First name" aria-label="Name" required>
+     <input class="signup-form-field" type="text" name="Last name" placeholder="Last name" aria-label="Last name" required>
+     <input class="signup-form-field" type="email" name="Email Adress" placeholder="Email Adress" aria-label="Email Adress" required>
+     <input class="signup-form-field" type="password" name="Password" placeholder="Password" aria-label="Password" required>
+    </div>
+    <button class="signup-submit" type="submit">Claim your free trial</button>
+    <div class="signup-form-notice">By clicking the button, you are agreeing to our <a class="signup-form-notice-link" href="#">Terms and Services</a></div>
+  </form>
   </div>
 </div>
 </body>
